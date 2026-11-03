@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Jose Wilmer Posada Lopez</title>
+  <meta name="description" content="Portafolio profesional de Jose Wilmer Posada Lopez - Estudiante de Ingeniería en Ciencias de la Computación y Desarrollador Web.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">Wilmer<span>.dev</span></a>
+      <nav id="navbar" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          <span>Disponible para nuevos retos y proyectos</span>
+        </div>
+        <h2>Hola, soy <br><span class="highlight">Jose Wilmer</span></h2>
+        <p>Estudiante de Ingeniería en Ciencias de la Computación. Construyendo interfaces web modernas, rápidas, accesibles y con diseño visual de alto impacto.</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver mis Proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="img-wrapper">
+          <img src="perfil2.jpg" alt="Foto de perfil de Jose Wilmer Posada Lopez" width="340" height="340">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Trayectoria y Pasión</h3>
+          <p>Soy estudiante de Ingeniería en Ciencias de la Computación y me encuentro en la recta final de mi carrera universitaria.</p>
+          <p>Me apasiona profundamente el desarrollo web moderno, las animaciones fluidas y la concepción de experiencias de usuario atractivas y responsivas.</p>
+          <p>Aplico constantemente estándares de accesibilidad, código limpio y buenas prácticas arquitectónicas utilizando preprocesadores modernos como <strong>LESS</strong> y empaquetadores como <strong>Vite</strong>.</p>
+        </div>
+        <div class="about-skills">
+          <h3>Habilidades y Tecnologías</h3>
+          <div class="skills-list">
+            <span class="skill-tag">HTML5 Semántico</span>
+            <span class="skill-tag">CSS3 / LESS</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">Vite Bundler</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">PHP / Laravel</span>
+            <span class="skill-tag">Diseño Responsivo</span>
+            <span class="skill-tag">PurgeCSS &amp; Optimización</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Mis Proyectos</h2>
+      <p class="projects-subtitle">Una muestra de mis trabajos prácticos, aplicaciones y desarrollos web recientes.</p>
+      
+      <div class="projects-grid">
+        <article class="projects-card">
+          <div class="card-top">
+            <div class="project-icon">🛒</div>
+            <h3>Variedades Sumaya</h3>
+            <p>Página web completa desarrollada para negocio comercial aplicando conceptos fundamentales de estructuración, maquetación responsiva y navegación.</p>
+          </div>
+          <div class="card-bottom">
+            <div class="tech-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://github.com/Elieth-Amador/ProyectoVariedadesSumaya" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Ver Repositorio &rarr;
+            </a>
+          </div>
+        </article>
+
+        <article class="projects-card">
+          <div class="card-top">
+            <div class="project-icon">🌐</div>
+            <h3>Primera Página Web</h3>
+            <p>Proyecto inicial con enfoque en fundamentos sólidos: semántica estructurada, diseño adaptativo multiplataforma y organización modular del código.</p>
+          </div>
+          <div class="card-bottom">
+            <div class="tech-stack">
+              <span>HTML Semántico</span>
+              <span>CSS Flexbox</span>
+              <span>Git</span>
+            </div>
+            <a href="https://github.com/Wilmerlop733/Primer-Web" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Ver Repositorio &rarr;
+            </a>
+          </div>
+        </article>
+
+        <article class="projects-card">
+          <div class="card-top">
+            <div class="project-icon">⚙️</div>
+            <h3>Proyecto Laravel</h3>
+            <p>Aplicación backend desarrollada con el framework PHP Laravel, implementando arquitectura MVC, rutas, controladores y gestión de datos relacionales.</p>
+          </div>
+          <div class="card-bottom">
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>Laravel</span>
+              <span>MySQL</span>
+            </div>
+            <a href="https://github.com/Wilmerlop733/ExamIIP" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Ver Repositorio &rarr;
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contáctame</h2>
+      <p class="contact-desc">¿Tienes un proyecto en mente o te gustaría colaborar? Envíame un mensaje y te responderé lo antes posible.</p>
+      
+      <div class="contact-wrapper">
+        <form id="contact-form" class="contact-form">
+          <div class="input-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" required placeholder="Tu Nombre">
+          </div>
+          <div class="input-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="tu-correo@ejemplo.com">
+          </div>
+          <div class="input-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Escribe aquí tu consulta o propuesta..."></textarea>
+          </div>
+          <div id="form-status" class="form-status"></div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Jose Wilmer Posada Lopez. Desarrollado con Vite &amp; LESS.</p>
+      <div class="social-links">
+        <a href="https://github.com/Wilmerlop733" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

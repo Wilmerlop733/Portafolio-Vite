@@ -1,0 +1,118 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(11, 17, 32, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 1px solid @border-color;
+  transition: @transition-smooth;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    span {
+      color: @primary;
+    }
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: @text-muted;
+      position: relative;
+
+      &:hover {
+        color: @text-main;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: @accent;
+        transition: @transition-smooth;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 2px;
+      margin: 5px auto;
+      background-color: @text-main;
+      transition: @transition-smooth;
+      border-radius: 2px;
+    }
+
+    &.active {
+      .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-md) {
+  #header {
+    .hamburger {
+      display: block;
+    }
+
+    .nav-links {
+      position: fixed;
+      top: 65px;
+      left: -100%;
+      width: 100%;
+      flex-direction: column;
+      gap: 1.5rem;
+      background: rgba(15, 23, 42, 0.98);
+      backdrop-filter: blur(16px);
+      padding: 2rem 0;
+      border-bottom: 1px solid @border-color;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: @transition-smooth;
+
+      &.active {
+        left: 0;
+      }
+    }
+  }
+}
